@@ -1,0 +1,16 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">TITLE</th>
+      <th scope="col">NEWS</th>
+      <th scope="col">WORD COUNT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let r of result">
+      <td>{{ r.title }}</td>
+      <td [innerHTML]="r.snippet" ></td>
+      <td>{{ r.wordcount }}</td>
+    </tr>
+  </tbody>
+</table>

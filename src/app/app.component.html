@@ -1,0 +1,5 @@
+<app-wiki-search-header></app-wiki-search-header>
+
+<app-wiki-searchbar (searchWord)="onSearchWiki($event)"></app-wiki-searchbar>
+
+<app-wiki-page *ngIf="result.length" [result]="result"></app-wiki-page>
